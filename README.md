@@ -1,5 +1,7 @@
 # Monster Assignment Rigidity (MAR)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24569482.svg)](https://doi.org/10.5281/zenodo.24569482)
+
 Lean 4 formalization of the paper *The Conway–Norton Table Is Forced: Monstrous Moonshine
 Assignment Rigidity, Formally Verified*  (`paper/mar.tex`).
 
