@@ -173,7 +173,7 @@ The following hold.
 \item (MAR-8) Every compatible assignment has the same twist $h$ as the CN table at every class except $32A$ and $32B$.
 \end{enumerate}
 \end{theorem}
-\leanref{\lean{MAR.MAR1} to \lean{MAR.MAR8}}
+\leanref{files \texttt{MAR/MAR01.lean} to \texttt{MAR/MAR08.lean}, for example \lean{MAR.MAR1}, \lean{MAR.MAR5}, \lean{MAR.MAR6}, \lean{MAR.MAR7\_sigma}}
 Le~Bruyn~\cite{LeBruyn} gave a rule that computes $h$ from power maps. On the data it fails at exactly $14$ classes (\lean{LeBruyn\_check}); by MAR-7, a failure at $32A$ or $32B$ is unavoidable for any such rule.
 
 %======================================================================
@@ -232,7 +232,7 @@ These misprints are present in the latest versions we could read (the published 
 %======================================================================
 The development uses Lean~4 (version 4.37.0-rc1) and its mathematics library Mathlib. It contains no unproved steps (\texttt{sorry}), does not use Lean's compiler to evaluate proofs (\texttt{native\_decide}), and adds no axioms; for every result, Lean reports that it depends only on the three standard axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}. Finite computations are evaluated by the kernel (\texttt{decide +kernel}). Long computations are split into steps, each proved equal to an explicit intermediate result; these intermediate results are produced by running the code, but they are not trusted, because each is checked by the kernel.
 
-The directory \texttt{MAR/} contains one file per result, which explains the result in words and restates its theorems under the names \lean{MAR.MAR1} to \lean{MAR.MAR17}. The repository~\cite{repo} also contains the source data, the scripts that produced the Lean data files, and a script that builds everything and checks the axioms.
+The directory \texttt{MAR/} contains one file per result, which explains the result in words and restates its theorems under names beginning with \lean{MAR.MAR}$n$ (for example \lean{MAR.MAR9} and \lean{MAR.MAR17\_46c}). The repository~\cite{repo} also contains the source data, the scripts that produced the Lean data files, and a script that builds everything and checks the axioms.
 
 %======================================================================
 \section{Related work}\label{sec:lit}
