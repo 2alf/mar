@@ -11,7 +11,8 @@ every one of these conditions is needed.
 ## A personal note
 
 The existence of the Monster group was one of the first things in mathematics to catch my
-attention, back in high school. This project grew out of that interest.
+attention, back in high school. Thanks to 3Blue1Brown (Grant Sanderson), whose videos first got me
+interested in the topic back then. This project grew out of that interest.
 
 ## Contents
 
