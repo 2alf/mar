@@ -1,14 +1,15 @@
-# Monster Assignment Rigidity (MAR)
-
+# Monster Assignment Rigidity (MAR) 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24569482.svg)](https://doi.org/10.5281/zenodo.24569482)
 
-Lean 4 formalization of the paper *The Conway–Norton Table Is Forced: Monstrous Moonshine
-Assignment Rigidity, Formally Verified*  (`paper/mar.tex`).
+Lean 4 formalization of the paper [*The Conway–Norton Table Is Forced: Monstrous Moonshine
+Assignment Rigidity, Formally Verified*](https://zenodo.org/records/24569482).
 
 **In one sentence:** for the published character-table data of the Monster, the Conway–Norton
 moonshine table is the only assignment of genus-zero groups of the right shape that obeys Conway
 and Norton's rule for powers and two simple conditions on the first moonshine coefficients, and
-every one of these conditions is needed.
+every one of these conditions is needed. /// **The Monster's moonshine table couldn't have been anything else.**
+
+
 
 ## A personal note
 
