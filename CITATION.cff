@@ -48,7 +48,7 @@ preferred-citation:
     - family-names: Alfirevic
       given-names: Andrej
       website: "https://xladn0.com"
-    orcid: "https://orcid.org/0009-0009-8224-1345"
+      orcid: "https://orcid.org/0009-0009-8224-1345"
   year: 2026
   doi: "10.5281/zenodo.24569482"
   url: "https://github.com/2alf/mar"
