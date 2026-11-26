@@ -1,0 +1,60 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+==========================================================
+
+The paper, the documentation and the data produced by this project are
+licensed under the Creative Commons Attribution 4.0 International License.
+This covers in particular:
+
+  * paper/            (LaTeX source and compiled PDF)
+  * README.md and the other documentation files
+  * the transcriptions produced by this project in sources/
+    (atlas_names.tsv, monster_cn_labels.tsv, baby_2B_table.tsv,
+    conway/*.tsv)
+
+Source code (Lean files, Python scripts, verify.ps1, verify.sh,
+check_axioms.lean) is licensed separately under the Apache License 2.0;
+see the file LICENSE.
+
+Third-party files redistributed in this repository are NOT covered by
+either license and remain under their original terms. See the section
+"Licences" in README.md for the list (GAP Character Table Library files,
+sources/ctomonst.tbl and sources/ctoconja.tbl).
+
+Copyright (c) 2026 Andrej Alfirevic
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. You are free to:
+
+  Share  - copy and redistribute the material in any medium or format
+           for any purpose, even commercially.
+  Adapt  - remix, transform, and build upon the material for any purpose,
+           even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the
+license terms.
+
+Under the following terms:
+
+  Attribution - You must give appropriate credit, provide a link to the
+                license, and indicate if changes were made. You may do so
+                in any reasonable manner, but not in any way that suggests
+                the licensor endorses you or your use.
+
+  No additional restrictions - You may not apply legal terms or
+                technological measures that legally restrict others from
+                doing anything the license permits.
+
+This is a human-readable summary of (and not a substitute for) the
+license. The full legal text (the "Legal Code") is available at:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+and a summary ("deed") at:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution:
+
+    "The Conway-Norton Table Is Forced: Monstrous Moonshine Assignment Rigidity,
+    Formally Verified" by Andrej Alfirevic (https://github.com/2alf/mar),
+    licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).

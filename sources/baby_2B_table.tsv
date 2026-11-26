@@ -1,0 +1,248 @@
+class_2B	B_class	lifts	partner_zg	class_g2	M_class_g	M_class_gt	T_tg_label	T1gt_label_CM	partner_label	label_kind	CN_translation	notes
+1a	1A	2	2a	1a	1A	2A	2A	2A	4~b	monstrous (Conway-Norton class)	2+	
+2a	1A	2	1a	1a	2A	1A	4~b	1A	2A	Norton-tilde (replicable, not completely replicable)	(2+)^{1/2}	T = -T_2A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+2b	2A	1	2b	1a	2A	2A	2a	2A	2a	ACMS92 non-monstrous completely replicable	2|2 (W acts by -1?)	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]; Ivanov-Tuite 2001 Table 3 case IV.A (h,gh both 2A): group "2|2-"; Carnahan GM-IV: q^-1-492q+... is Hauptmodul for Gamma0(2|2); CKU 2018: 2a is n|h-type with W_N eigenvalue -1
+2c	2B	2	2d	1a	2A	2B	4A	2B	2B	monstrous (Conway-Norton class)	4+	
+2d	2B	2	2c	1a	2B	2A	2B	2A	4A	monstrous (Conway-Norton class)	2-	
+4a	2C	1	4a	2a	4B	4B	8~b	4B	8~b	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+2e	2D	1	2e	1a	2B	2B	4C	2B	4C	monstrous (Conway-Norton class)	4-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+3a	3A	2	6a	3a	3A	6A	6A	6A	12~d	monstrous (Conway-Norton class)	6+	
+6a	3A	2	3a	3a	6A	3A	12~d	3A	6A	Norton-tilde (replicable, not completely replicable)	(6+)^{1/2}	T = -T_6A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+3b	3B	2	6b	3b	3B	6D	6D	6D	12~f	monstrous (Conway-Norton class)	6+2	
+6b	3B	2	3b	3b	6D	3B	12~f	3B	6D	Norton-tilde (replicable, not completely replicable)	(6+2)^{1/2}	T = -T_6D(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+4b	4A	1	4b	2d	4A	4A	4a	4A	4a	ACMS92 non-monstrous completely replicable	4|2+2bar [inferred]	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]; Ivanov-Tuite Thm 4.4 VIII.B (h=4A,gh=4A,gh^2=2A): "4|2+ or 4|2+2(bar)"; 4c with same structure is 4B=4|2+, so 4a = the barred one; CKU: 4a has W_N eigenvalue -1
+4c	4B	1	4c	2d	4A	4A	4B	4A	4B	monstrous (Conway-Norton class)	4|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+4d	4C	1	4d	2d	4C	4C	4C	4C	4C	monstrous (Conway-Norton class)	4-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+4e	4D	1	4e	2c	4B	4B	8a	4B	8a	ACMS92 non-monstrous completely replicable	8|2+4bar [inferred]	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]; Ivanov-Tuite II.D (h=4B,h^2=2A,gh^2=2B): "8|2+4 or 8|2+4(bar)"; 4i with same structure is 8B=8|2+, so 8a = the barred one; CKU: 8a has W_N eigenvalue -1
+4f	4E	2	4g	2e	4A	4C	8A	4C	8~d	monstrous (Conway-Norton class)	8+	
+4g	4E	2	4f	2e	4C	4A	8~d	4A	8A	Norton-tilde (replicable, not completely replicable)	(8+)^{1/2}	T = -T_8A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+4h	4F	1	4h	2d	4C	4C	4D	4C	4D	monstrous (Conway-Norton class)	4|2-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+4i	4G	1	4i	2c	4B	4B	8B	4B	8B	monstrous (Conway-Norton class)	8|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+4j	4H	1	4j	2e	4C	4C	8E	4C	8E	monstrous (Conway-Norton class)	8-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8a	4I	1	8a	4a	8C	8C	16~a	8C	16~a	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+4k	4J	1	4k	2e	4D	4D	8D	4D	8D	monstrous (Conway-Norton class)	8|2-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+5a	5A	2	10a	5a	5A	10A	10A	10A	20~c	monstrous (Conway-Norton class)	10+	
+10a	5A	2	5a	5a	10A	5A	20~c	5A	10A	Norton-tilde (replicable, not completely replicable)	(10+)^{1/2}	T = -T_10A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+5b	5B	2	10b	5b	5B	10C	10C	10C	20~d	monstrous (Conway-Norton class)	10+2	
+10b	5B	2	5b	5b	10C	5B	20~d	5B	10C	Norton-tilde (replicable, not completely replicable)	(10+2)^{1/2}	T = -T_10C(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+6c	6A	1	6c	3a	6A	6A	6a	6A	6a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+6d	6B	1	6d	3a	6A	6A	6b	6A	6b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+6e	6C	2	6f	3a	6A	6C	12A	6C	6C	monstrous (Conway-Norton class)	12+	
+6f	6C	2	6e	3a	6C	6A	6C	6A	12A	monstrous (Conway-Norton class)	6+3	
+6g	6D	1	6g	3b	6D	6D	6c	6D	6c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+6h	6E	1	6h	3a	6C	6C	12c	6C	12c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12a	6F	1	12a	6a	12C	12C	24~f	12C	24~f	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+6i	6G	2	6j	3b	6D	6E	12B	6E	6E	monstrous (Conway-Norton class)	12+4	
+6j	6G	2	6i	3b	6E	6D	6E	6D	12B	monstrous (Conway-Norton class)	6-	
+6k	6H	1	6k	3a	6C	6C	12E	6C	12E	monstrous (Conway-Norton class)	12+3	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+6l	6I	2	6m	3b	6B	6E	12H	6E	12~h	monstrous (Conway-Norton class)	12+12	
+6m	6I	2	6l	3b	6E	6B	12~h	6B	12H	Norton-tilde (replicable, not completely replicable)	(12+12)^{1/2}	T = -T_12H(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+6n	6J	1	6n	3b	6E	6E	12I	6E	12I	monstrous (Conway-Norton class)	12-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12b	6K	1	12b	6b	12G	12G	24~h	12G	24~h	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+7a	7A	2	14a	7a	7A	14A	14A	14A	28~c	monstrous (Conway-Norton class)	14+	
+14a	7A	2	7a	7a	14A	7A	28~c	7A	14A	Norton-tilde (replicable, not completely replicable)	(14+)^{1/2}	T = -T_14A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+8b	8A	1	8b	4d	8A	8A	8a	8A	8a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8c	8B	1	8c	4c	8B	8B	8b	8B	8b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8d	8C	1	8d	4c	8B	8B	8c	8B	8c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8e	8D	1	8e	4d	8A	8A	8B	8A	8B	monstrous (Conway-Norton class)	8|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8f	8E	1	8f	4c	8B	8B	8C	8B	8C	monstrous (Conway-Norton class)	8|4+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8g	8F	1	8g	4d	8E	8E	8D	8E	8D	monstrous (Conway-Norton class)	8|2-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8h	8G	1	8h	4g	8D	8D	16~d	8D	16~d	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8i	8H	1	8i	4d	8E	8E	8E	8E	8E	monstrous (Conway-Norton class)	8-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8j	8I	1	8j	4h	8D	8D	8F	8D	8F	monstrous (Conway-Norton class)	8|4-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8k	8J	1	8k	4f	8B	8B	16A	8B	16A	monstrous (Conway-Norton class)	16|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8l	8K	2	8m	4j	8A	8E	16C	8E	16~e	monstrous (Conway-Norton class)	16+	
+8m	8K	2	8l	4j	8E	8A	16~e	8A	16C	Norton-tilde (replicable, not completely replicable)	(16+)^{1/2}	T = -T_16C(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+8n	8L	1	8n	4i	8C	8C	16a	8C	16a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8o	8M	1	8o	4j	8E	8E	16B	8E	16B	monstrous (Conway-Norton class)	16-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+8p	8N	1	8p	4k	8F	8F	16d	8F	16d	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+9a	9A	2	18a	9a	9B	18A	18A	18A	36~h	monstrous (Conway-Norton class)	18+2	
+18a	9A	2	9a	9a	18A	9B	36~h	9B	18A	Norton-tilde (replicable, not completely replicable)	(18+2)^{1/2}	T = -T_18A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+9b	9B	2	18b	9b	9A	18B	18B	18B	36~e	monstrous (Conway-Norton class)	18+	
+18b	9B	2	9b	9b	18B	9A	36~e	9A	18B	Norton-tilde (replicable, not completely replicable)	(18+)^{1/2}	T = -T_18B(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+10c	10A	1	10c	5a	10A	10A	10a	10A	10a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+10d	10B	2	10e	5a	10A	10B	20A	10B	10B	monstrous (Conway-Norton class)	20+	
+10e	10B	2	10d	5a	10B	10A	10B	10A	20A	monstrous (Conway-Norton class)	10+5	
+20a	10C	1	20a	10a	20B	20B	40~c	20B	40~c	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+10f	10D	2	10g	5b	10C	10E	20C	10E	10E	monstrous (Conway-Norton class)	20+4	
+10g	10D	2	10f	5b	10E	10C	10E	10C	20C	monstrous (Conway-Norton class)	10-	
+10h	10E	1	10h	5a	10B	10B	20d	10B	20d	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+10i	10F	2	10j	5b	10D	10E	20F	10E	20~g	monstrous (Conway-Norton class)	20+20	
+10j	10F	2	10i	5b	10E	10D	20~g	10D	20F	Norton-tilde (replicable, not completely replicable)	(20+20)^{1/2}	T = -T_20F(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+11a	11A	2	22a	11a	11A	22A	22A	22A	44~b	monstrous (Conway-Norton class)	22+	
+22a	11A	2	11a	11a	22A	11A	44~b	11A	22A	Norton-tilde (replicable, not completely replicable)	(22+)^{1/2}	T = -T_22A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+12c	12A	1	12c	6f	12A	12A	12a	12A	12a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12d	12B	1	12d	6j	12B	12B	12G	12B	12G	monstrous (Conway-Norton class)	12|2+2	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12e	12C	1	12e	6f	12A	12A	12b	12A	12b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12f	12D	1	12f	6f	12A	12A	12C	12A	12C	monstrous (Conway-Norton class)	12|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12g	12E	1	12g	6e	12C	12C	24a	12C	24a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12h	12F	2	12i	6m	12B	12H	24~j	12H	24~k	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_24~k(tau+1/2) [derived]
+12i	12F	2	12h	6m	12H	12B	24~k	12B	24~j	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_24~j(tau+1/2) [derived]
+12j	12G	1	12j	6f	12E	12E	12E	12E	12E	monstrous (Conway-Norton class)	12+3	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12k	12H	1	12k	6e	12C	12C	24b	12C	24b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12l	12I	1	12l	6f	12E	12E	12d	12E	12d	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12m	12J	2	12n	6k	12A	12E	24B	12E	24~m	monstrous (Conway-Norton class)	24+	
+12n	12J	2	12m	6k	12E	12A	24~m	12A	24B	Norton-tilde (replicable, not completely replicable)	(24+)^{1/2}	T = -T_24B(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+12o	12K	1	12o	6i	12G	12G	24c	12G	24c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12p	12L	1	12p	6e	12C	12C	24A	12C	24A	monstrous (Conway-Norton class)	24|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12q	12M	1	12q	6j	12I	12I	12I	12I	12I	monstrous (Conway-Norton class)	12-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12r	12N	2	12s	6n	12B	12I	24C	12I	24~o	monstrous (Conway-Norton class)	24+8	
+12s	12N	2	12r	6n	12I	12B	24~o	12B	24C	Norton-tilde (replicable, not completely replicable)	(24+8)^{1/2}	T = -T_24C(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+12t	12O	1	12t	6j	12H	12H	12F	12H	12F	monstrous (Conway-Norton class)	12|2+6	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12u	12P	1	12u	6k	12E	12E	24h	12E	24h	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12v	12Q	1	12v	6m	12I	12I	24~q	12I	24~q	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12w	12R	1	12w	6l	12F	12F	24H	12F	24H	monstrous (Conway-Norton class)	24|2+12	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+12x	12S	2	12y	6n	12H	12I	24I	12I	24~r	monstrous (Conway-Norton class)	24+24	
+12y	12S	2	12x	6n	12I	12H	24~r	12H	24I	Norton-tilde (replicable, not completely replicable)	(24+24)^{1/2}	T = -T_24I(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+24a	12T	1	24a	12b	24G	24G	48~c	24G	48~c	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+13a	13A	2	26a	13a	13A	26A	26A	26A	52~c	monstrous (Conway-Norton class)	26+	
+26a	13A	2	13a	13a	26A	13A	52~c	13A	26A	Norton-tilde (replicable, not completely replicable)	(26+)^{1/2}	T = -T_26A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+14b	14A	1	14b	7a	14A	14A	14a	14A	14a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+14c	14B	1	14c	7a	14A	14A	14c	14A	14c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+28a	14C	1	28a	14a	28A	28A	56~d	28A	56~d	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+14d	14D	2	14e	7a	14A	14B	28B	14B	14B	monstrous (Conway-Norton class)	28+	
+14e	14D	2	14d	7a	14B	14A	14B	14A	28B	monstrous (Conway-Norton class)	14+7	
+14f	14E	1	14f	7a	14B	14B	28C	14B	28C	monstrous (Conway-Norton class)	28+7	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+15a	15A	2	30a	15a	15A	30B	30B	30B	60~c	monstrous (Conway-Norton class)	30+	
+30a	15A	2	15a	15a	30B	15A	60~c	15A	30B	Norton-tilde (replicable, not completely replicable)	(30+)^{1/2}	T = -T_30B(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+15b	15B	2	30b	15b	15C	30F	30F	30F	60~l	monstrous (Conway-Norton class)	30+2,15,30	
+30b	15B	2	15b	15b	30F	15C	60~l	15C	30F	Norton-tilde (replicable, not completely replicable)	(30+2,15,30)^{1/2}	T = -T_30F(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+16a	16A	1	16a	8e	16A	16A	16b	16A	16b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16b	16B	1	16b	8e	16A	16A	16c	16A	16c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16c	16C	1	16c	8i	16B	16B	16B	16B	16B	monstrous (Conway-Norton class)	16-	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16d	16D	1	16d	8i	16C	16C	16A	16C	16A	monstrous (Conway-Norton class)	16|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16e	16E	1	16e	8e	16A	16A	16a	16A	16a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16f	16F	1	16f	8i	16C	16C	16A	16C	16A	monstrous (Conway-Norton class)	16|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16g	16G	1	16g	8l	16A	16A	32B	16A	32B	monstrous (Conway-Norton class)	32|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+16h	16H	2	16i	8o	16C	16B	32A	16B	32~e	monstrous (Conway-Norton class)	32+	
+16i	16H	2	16h	8o	16B	16C	32~e	16C	32A	Norton-tilde (replicable, not completely replicable)	(32+)^{1/2}	T = -T_32A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+17a	17A	2	34a	17a	17A	34A	34A	34A	68~b	monstrous (Conway-Norton class)	34+	
+34a	17A	2	17a	17a	34A	17A	68~b	17A	34A	Norton-tilde (replicable, not completely replicable)	(34+)^{1/2}	T = -T_34A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+18c	18A	1	18c	9b	18B	18B	18c	18B	18c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+18d	18B	1	18d	9b	18B	18B	18c	18B	18c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+18e	18C	2	18f	9b	18B	18C	36A	18C	18C	monstrous (Conway-Norton class)	36+	
+18f	18C	2	18e	9b	18C	18B	18C	18B	36A	monstrous (Conway-Norton class)	18+9	
+18g	18D	1	18g	9b	18C	18C	36f	18C	36f	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+18h	18E	2	18i	9a	18E	18D	36D	18D	36~q	monstrous (Conway-Norton class)	36+36	
+18i	18E	2	18h	9a	18D	18E	36~q	18E	36D	Norton-tilde (replicable, not completely replicable)	(36+36)^{1/2}	T = -T_36D(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+36a	18F	1	36a	18b	36C	36C	72~c	36C	72~c	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+19a	19A	2	38a	19a	19A	38A	38A	38A	76~b	monstrous (Conway-Norton class)	38+	
+38a	19A	2	19a	19a	38A	19A	76~b	19A	38A	Norton-tilde (replicable, not completely replicable)	(38+)^{1/2}	T = -T_38A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+20b	20A	1	20b	10e	20A	20A	20a	20A	20a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20c	20B	1	20c	10g	20C	20C	20c	20C	20c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20d	20C	1	20d	10e	20A	20A	20b	20A	20b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20e	20D	1	20e	10e	20A	20A	20B	20A	20B	monstrous (Conway-Norton class)	20|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20f	20E	1	20f	10d	20B	20B	40a	20B	40a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20g	20F	1	20g	10d	20B	20B	40B	20B	40B	monstrous (Conway-Norton class)	40|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20h	20G	2	20i	10j	20C	20F	40~h	20F	40~i	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_40~i(tau+1/2) [derived]
+20i	20G	2	20h	10j	20F	20C	40~i	20C	40~h	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_40~h(tau+1/2) [derived]
+40a	20H	1	40a	20a	40A	40A	80~a	40A	80~a	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20j	20I	1	20j	10g	20F	20F	20E	20F	20E	monstrous (Conway-Norton class)	20|2+10	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+20k	20J	1	20k	10i	20E	20E	40C	20E	40C	monstrous (Conway-Norton class)	40|2+20	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+21a	21A	2	42a	21a	21A	42A	42A	42A	84~e	monstrous (Conway-Norton class)	42+	
+42a	21A	2	21a	21a	42A	21A	84~e	21A	42A	Norton-tilde (replicable, not completely replicable)	(42+)^{1/2}	T = -T_42A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+22b	22A	2	22c	11a	22A	22A	22a	22A	22a	ACMS92 non-monstrous completely replicable		T = -T_22a(tau+1/2) [derived]
+22c	22A	2	22b	11a	22A	22A	22a	22A	22a	ACMS92 non-monstrous completely replicable		T = -T_22a(tau+1/2) [derived]
+22d	22B	2	22e	11a	22A	22B	44A	22B	22B	monstrous (Conway-Norton class)	44+	
+22e	22B	2	22d	11a	22B	22A	22B	22A	44A	monstrous (Conway-Norton class)	22+11	
+23a	23A	2	46a	23a	23A	46C	46C	46C	92~b	monstrous (Conway-Norton class)	46+	
+46a	23A	2	23a	23a	46C	23A	92~b	23A	46C	Norton-tilde (replicable, not completely replicable)	(46+)^{1/2}	T = -T_46C(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+23b	23B	2	46b	23b	23B	46D	46C	46C	92~b	monstrous (Conway-Norton class)	46+	CM T1gt=46C vs GAP class(gt)=46D (same monstrous series, algebraic conjugates)
+46b	23B	2	23b	23b	46D	23B	92~b	23A	46C	Norton-tilde (replicable, not completely replicable)	(46+)^{1/2}	CM T1gt=23A vs GAP class(gt)=23B (same monstrous series, algebraic conjugates); T = -T_46C(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+24b	24A	1	24b	12f	24A	24A	24d	24A	24d	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24c	24B	1	24c	12f	24A	24A	24e	24A	24e	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24d	24C	1	24d	12f	24A	24A	24g	24A	24g	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24e	24D	1	24e	12f	24A	24A	24f	24A	24f	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24f	24E	1	24f	12j	24B	24B	24b	24B	24b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24g	24F	1	24g	12q	24C	24C	24c	24C	24c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24h	24G	1	24h	12j	24B	24B	24A	24B	24A	monstrous (Conway-Norton class)	24|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24i	24H	1	24i	12i	24H	24H	48~h	24H	48~h	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24j	24I	1	24j	12n	24D	24D	48~i	24D	48~i	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24k	24J	1	24k	12m	24A	24A	48A	24A	48A	monstrous (Conway-Norton class)	48|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24l	24K	1	24l	12q	24I	24I	24H	24I	24H	monstrous (Conway-Norton class)	24|2+12	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24m	24L	2	24n	12v	24C	24I	48~j	24I	48~k	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_48~k(tau+1/2) [derived]
+24n	24L	2	24m	12v	24I	24C	48~k	24C	48~j	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_48~j(tau+1/2) [derived]
+24o	24M	1	24o	12t	24H	24H	24F	24H	24F	monstrous (Conway-Norton class)	24|4+6	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+24p	24N	1	24p	12w	24F	24F	48h	24F	48h	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+25a	25A	2	50a	25a	25A	50A	50A	50A	100~c	monstrous (Conway-Norton class)	50+	
+50a	25A	2	25a	25a	50A	25A	100~c	25A	50A	Norton-tilde (replicable, not completely replicable)	(50+)^{1/2}	T = -T_50A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+52a	26A	1	52a	26a	52A	52A	104~c	52A	104~c	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+26b	26B	1	26b	13a	26A	26A	26a	26A	26a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+27a	27A	2	54a	27a	27A	54A	54A	54A	108~g	monstrous (Conway-Norton class)	54+	
+54a	27A	2	27a	27a	54A	27A	108~g	27A	54A	Norton-tilde (replicable, not completely replicable)	(54+)^{1/2}	T = -T_54A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+28b	28A	1	28b	14e	28B	28B	28A	28B	28A	monstrous (Conway-Norton class)	28|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+28c	28B	1	28c	14e	28C	28C	28C	28C	28C	monstrous (Conway-Norton class)	28+7	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+28d	28C	1	28d	14e	28B	28B	28a	28B	28a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+28e	28D	1	28e	14d	28A	28A	56a	28A	56a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+28f	28E	2	28g	14f	28B	28C	56A	28C	56~g	monstrous (Conway-Norton class)	56+	
+28g	28E	2	28f	14f	28C	28B	56~g	28B	56A	Norton-tilde (replicable, not completely replicable)	(56+)^{1/2}	T = -T_56A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+30c	30A	1	30c	15a	30B	30B	30a	30B	30a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+30d	30B	1	30d	15a	30B	30B	30d	30B	30d	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+60a	30C	1	60a	30a	60A	60A	120~d	60A	120~d	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+30e	30D	2	30f	15a	30B	30C	60B	30C	30C	monstrous (Conway-Norton class)	60+	
+30f	30D	2	30e	15a	30C	30B	30C	30B	60B	monstrous (Conway-Norton class)	30+3,5,15	
+30g	30E	1	30g	15a	30C	30C	60a	30C	60a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+30h	30F	2	30i	15b	30A	30G	60D	30G	60~m	monstrous (Conway-Norton class)	60+12,15,20	
+30i	30F	2	30h	15b	30G	30A	60~m	30A	60D	Norton-tilde (replicable, not completely replicable)	(60+12,15,20)^{1/2}	T = -T_60D(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+30j	30G	2	30k	15b	30F	30G	60C	30G	30G	monstrous (Conway-Norton class)	60+4,15,60	
+30k	30G	2	30j	15b	30G	30F	30G	30F	60C	monstrous (Conway-Norton class)	30+15	
+30l	30H	2	30m	15b	30F	30G	60C	30G	30G	monstrous (Conway-Norton class)	60+4,15,60	
+30m	30H	2	30l	15b	30G	30F	30G	30F	60C	monstrous (Conway-Norton class)	30+15	
+31a	31A	2	62a	31a	31A	62A	62A	62A	124~b	monstrous (Conway-Norton class)	62+	
+62a	31A	2	31a	31a	62A	31A	124~b	31A	62A	Norton-tilde (replicable, not completely replicable)	(62+)^{1/2}	T = -T_62A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+31b	31B	2	62b	31b	31B	62B	62A	62A	124~b	monstrous (Conway-Norton class)	62+	CM T1gt=62A vs GAP class(gt)=62B (same monstrous series, algebraic conjugates)
+62b	31B	2	31b	31b	62B	31B	124~b	31A	62A	Norton-tilde (replicable, not completely replicable)	(62+)^{1/2}	CM T1gt=31A vs GAP class(gt)=31B (same monstrous series, algebraic conjugates); T = -T_62A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+32a	32A	1	32a	16c	32A	32A	32B	32A	32B	monstrous (Conway-Norton class)	32|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+32b	32B	1	32b	16c	32A	32A	32B	32A	32B	monstrous (Conway-Norton class)	32|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+32c	32C	1	32c	16d	32B	32B	32b	32B	32b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+32d	32D	1	32d	16d	32B	32B	32b	32B	32b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+33a	33A	2	66a	33a	33B	66A	66A	66A	132~c	monstrous (Conway-Norton class)	66+	
+66a	33A	2	33a	33a	66A	33B	132~c	33B	66A	Norton-tilde (replicable, not completely replicable)	(66+)^{1/2}	T = -T_66A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+68a	34A	1	68a	34a	68A	68A	136~b	68A	136~b	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+34b	34B	1	34b	17a	34A	34A	34a	34A	34a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+34c	34C	1	34c	17a	34A	34A	34a	34A	34a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+35a	35A	2	70a	35a	35A	70A	70A	70A	140~b	monstrous (Conway-Norton class)	70+	
+70a	35A	2	35a	35a	70A	35A	140~b	35A	70A	Norton-tilde (replicable, not completely replicable)	(70+)^{1/2}	T = -T_70A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+36b	36A	1	36b	18f	36A	36A	36C	36A	36C	monstrous (Conway-Norton class)	36|2+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+36c	36B	1	36c	18e	36C	36C	72a	36C	72a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+36d	36C	2	36e	18i	36B	36D	72~p	36D	72~q	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_72~q(tau+1/2) [derived]
+36e	36C	2	36d	18i	36D	36B	72~q	36B	72~p	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_72~p(tau+1/2) [derived]
+38b	38A	2	38c	19a	38A	38A	38a	38A	38a	ACMS92 non-monstrous completely replicable		T = -T_38a(tau+1/2) [derived]
+38c	38A	2	38b	19a	38A	38A	38a	38A	38a	ACMS92 non-monstrous completely replicable		T = -T_38a(tau+1/2) [derived]
+39a	39A	2	78a	39a	39A	78A	78A	78A	156~d	monstrous (Conway-Norton class)	78+	
+78a	39A	2	39a	39a	78A	39A	156~d	39A	78A	Norton-tilde (replicable, not completely replicable)	(78+)^{1/2}	T = -T_78A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+40b	40A	1	40b	20e	40B	40B	40b	40B	40b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+40c	40B	1	40c	20e	40B	40B	40c	40B	40c	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+40d	40C	1	40d	20e	40B	40B	40A	40B	40A	monstrous (Conway-Norton class)	40|4+	single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+40e	40D	1	40e	20g	40A	40A	80a	40A	80a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+40f	40E	2	40g	20i	40C	40D	80~e	40C	80~e	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); CM T1gt=40C vs GAP class(gt)=40D (same monstrous series, algebraic conjugates); T = -T_80~e(tau+1/2) [derived]
+40g	40E	2	40f	20i	40D	40C	80~e	40C	80~e	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_80~e(tau+1/2) [derived]
+42b	42A	1	42b	21a	42A	42A	42a	42A	42a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+42c	42B	1	42c	21a	42A	42A	42b	42A	42b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+84a	42C	1	84a	42a	84A	84A	168~c	84A	168~c	Norton-tilde (replicable, not completely replicable)		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+44a	44A	2	44b	22e	44A	44B	44c	44A	44c	ACMS92 non-monstrous completely replicable		CM T1gt=44A vs GAP class(gt)=44B (same monstrous series, algebraic conjugates); T = -T_44c(tau+1/2) [derived]
+44b	44A	2	44a	22e	44B	44A	44c	44A	44c	ACMS92 non-monstrous completely replicable		T = -T_44c(tau+1/2) [derived]
+46c	46A	2	46d	23a	46C	46A	92A	46A	46A	monstrous (Conway-Norton class)	92+	CM prints (23c) for g^2; GAP gives 23a
+46d	46A	2	46c	23a	46A	46C	46A	46C	92A	monstrous (Conway-Norton class)	46+23	
+46e	46B	2	46f	23b	46D	46B	92A	46A	46A	monstrous (Conway-Norton class)	92+	CM T1gt=46A vs GAP class(gt)=46B (same monstrous series, algebraic conjugates)
+46f	46B	2	46e	23b	46B	46D	46A	46C	92A	monstrous (Conway-Norton class)	46+23	CM T1gt=46C vs GAP class(gt)=46D (same monstrous series, algebraic conjugates)
+47a	47A	2	94a	47a	47A	94A	94A	94A	188~b	monstrous (Conway-Norton class)	94+	
+94a	47A	2	47a	47a	94A	47A	188~b	47A	94A	Norton-tilde (replicable, not completely replicable)	(94+)^{1/2}	T = -T_94A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+47b	47B	2	94b	47b	47B	94B	94A	94A	188~b	monstrous (Conway-Norton class)	94+	CM T1gt=94A vs GAP class(gt)=94B (same monstrous series, algebraic conjugates)
+94b	47B	2	47b	47b	94B	47B	188~b	47A	94A	Norton-tilde (replicable, not completely replicable)	(94+)^{1/2}	CM prints (47a) for g^2; GAP gives 47b; CM T1gt=47A vs GAP class(gt)=47B (same monstrous series, algebraic conjugates); T = -T_94A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+48a	48A	1	48a	24h	48A	48A	48a	48A	48a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+48b	48B	1	48b	24h	48A	48A	48b	48A	48b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+104a	52A	2	104b	52a	104A	104B	208~a	104A	208~a	Norton-tilde (replicable, not completely replicable)		CM T1gt=104A vs GAP class(gt)=104B (same monstrous series, algebraic conjugates); T = -T_208~a(tau+1/2) [derived]
+104b	52A	2	104a	52a	104B	104A	208~a	104A	208~a	Norton-tilde (replicable, not completely replicable)		T = -T_208~a(tau+1/2) [derived]
+55a	55A	2	110a	55a	55A	110A	110A	110A	220~b	monstrous (Conway-Norton class)	110+	
+110a	55A	2	55a	55a	110A	55A	220~b	55A	110A	Norton-tilde (replicable, not completely replicable)	(110+)^{1/2}	T = -T_110A(tau+1/2), group = conj. of partner group by tau->tau+1/2 [derived]
+56a	56A	1	56a	28c	56A	56A	56a	56A	56a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+56b	56B	1	56b	28c	56A	56A	56a	56A	56a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+60b	60A	1	60b	30f	60B	60B	60b	60B	60b	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+60c	60B	1	60c	30e	60A	60A	120a	60A	120a	ACMS92 non-monstrous completely replicable		single lift (g ~ zg): T(tau+1/2) = -T(tau), even-index coefficients vanish [derived]
+60d	60C	2	60e	30i	60C	60D	120~g	60D	120~h	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_120~h(tau+1/2) [derived]
+60e	60C	2	60d	30i	60D	60C	120~h	60C	120~g	Norton-tilde (replicable, not completely replicable)		one of CM 13 exceptional classes (matched via first 23 coeffs); T = -T_120~g(tau+1/2) [derived]
+66b	66A	2	66c	33a	66A	66A	66a	66A	66a	ACMS92 non-monstrous completely replicable		T = -T_66a(tau+1/2) [derived]
+66c	66A	2	66b	33a	66A	66A	66a	66A	66a	ACMS92 non-monstrous completely replicable		T = -T_66a(tau+1/2) [derived]
+70b	70A	2	70c	35a	70A	70A	70a	70A	70a	ACMS92 non-monstrous completely replicable		T = -T_70a(tau+1/2) [derived]
+70c	70A	2	70b	35a	70A	70A	70a	70A	70a	ACMS92 non-monstrous completely replicable		T = -T_70a(tau+1/2) [derived]

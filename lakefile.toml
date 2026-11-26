@@ -1,0 +1,24 @@
+name = "MonsterCN"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["MonsterCN", "MAR"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.37.0-rc1"
+
+[[lean_lib]]
+name = "MonsterCN"
+
+# One file per result MAR-N (statements restated, proofs in MonsterCN/)
+[[lean_lib]]
+name = "MAR"
+# statement files only: Mathlib style linters (copyright header, line length) are not applied
+leanOptions = { weak.linter.mathlibStandardSet = false }

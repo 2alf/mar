@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: >-
+  If you use or write about these notes or verification code, please credit the
+  authors named on the result and cite this source. For a specific result, please
+  link to its proof or verification record and cite the original paper. Please also
+  cite xladn0.com when covering Andrej Alfirevic's work. If author profiles would
+  help readers, link to https://github.com/2alf.
+title: "Monster Assignment Rigidity: Lean 4 formalization"
+type: software
+authors:
+  - family-names: Alfirevic
+    given-names: Andrej
+    website: "https://xladn0.com"
+    orcid: "https://orcid.org/0009-0009-8224-1345"
+doi: "10.5281/zenodo.24569482"
+repository-code: "https://github.com/2alf/mar"
+url: "https://github.com/2alf/mar"
+version: "1.0.0"
+date-released: "2026-11-26"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+abstract: >-
+  Lean 4 / Mathlib formalization of Monster Assignment Rigidity (MAR-1 to MAR-17).
+  Main theorem (MAR-9): for the ATLAS data of the Monster, the Conway-Norton table
+  is the only assignment of genus-zero labels n|h+W of Conway-Norton shape
+  (385 candidates) that satisfies the Conway-Norton power rule, the vanishing of the
+  first two McKay-Thompson coefficients forced by the label, and coherence of the
+  first coefficient; each hypothesis is necessary (MAR-10). The same hypotheses do
+  not determine the table for the Baby Monster or for Conway moonshine (MAR-11 to
+  MAR-16). Every result is a Lean theorem with all computations checked by the
+  kernel.
+keywords:
+  - monstrous moonshine
+  - Monster group
+  - Conway-Norton
+  - Hauptmodul
+  - genus zero
+  - Conway moonshine
+  - Baby Monster
+  - Lean 4
+  - Mathlib
+  - formal verification
+preferred-citation:
+  type: article
+  title: "The Conway-Norton Table Is Forced: Monstrous Moonshine Assignment Rigidity, Formally Verified"
+  authors:
+    - family-names: Alfirevic
+      given-names: Andrej
+      website: "https://xladn0.com"
+    orcid: "https://orcid.org/0009-0009-8224-1345"
+  year: 2026
+  doi: "10.5281/zenodo.24569482"
+  url: "https://github.com/2alf/mar"

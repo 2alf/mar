@@ -1,0 +1,91 @@
+co0_class	co1_class	order	frame_shape	C_g	group_label_tw	group_label_tw_plain	monster_class	source_location
+2A	1A	2	2^24/1^24	4096	2-	2-	2B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1489); Forum Math. Sigma 3 (2015) e10, Table A.2
+4A	2B	4	4^12/2^12	64	4\vert 2-	4|2-	4D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1491); Forum Math. Sigma 3 (2015) e10, Table A.2
+3A	3A	3	3^12/1^12	729	3-	3-	3B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1493); Forum Math. Sigma 3 (2015) e10, Table A.2
+6A	3A	6	1^12 6^12/2^12 3^12	1	6+6	6+6	6B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1494); Forum Math. Sigma 3 (2015) e10, Table A.2
+6B	3B	6	2^6 6^6/1^6 3^6	64	6+3	6+3	6C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1496); Forum Math. Sigma 3 (2015) e10, Table A.2
+6C	3C	6	1^3 6^9/2^3 3^9	$-8$	6-	6-	6E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1498); Forum Math. Sigma 3 (2015) e10, Table A.2
+6D	3D	6	6^8/3^8	16	6\vert 3-	6|3-	6F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1500); Forum Math. Sigma 3 (2015) e10, Table A.2
+4C	4A	4	4^8/1^8	256	4-	4-	4C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1502); Forum Math. Sigma 3 (2015) e10, Table A.2
+8A	4E	8	8^6/4^6	8	8\vert 4-	8|4-	8F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1504); Forum Math. Sigma 3 (2015) e10, Table A.2
+5A	5A	5	5^6/1^6	125	5-	5-	5B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1506); Forum Math. Sigma 3 (2015) e10, Table A.2
+10A	5A	10	1^6 10^6/2^6 5^6	1	10+10	10+10	10D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1507); Forum Math. Sigma 3 (2015) e10, Table A.2
+10B	5B	10	2^4 10^4/1^4 5^4	16	10+5	10+5	10B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1509); Forum Math. Sigma 3 (2015) e10, Table A.2
+10C	5C	10	1^1 10^5/2^1 5^5	$-4$	10-	10-	10E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1511); Forum Math. Sigma 3 (2015) e10, Table A.2
+6E	6A	6	3^4 6^4/1^4 2^4	81	6+2	6+2	6D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1513); Forum Math. Sigma 3 (2015) e10, Table A.2
+6F	6A	6	1^4 6^8/2^8 3^4	9	6-	6-	6E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1514); Forum Math. Sigma 3 (2015) e10, Table A.2
+12A	6B	12	2^6 12^6/4^6 6^6	1	12\vert 2+6	12|2+6	12F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1516); Forum Math. Sigma 3 (2015) e10, Table A.2
+6J	6D	6	2^1 6^5/1^5 3^1	72	6-	6-	6E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1518); Forum Math. Sigma 3 (2015) e10, Table A.2
+12B	6H	12	12^4/6^4	4	12\vert 6-	12|6-	12J	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1520); Forum Math. Sigma 3 (2015) e10, Table A.2
+7A	7A	7	7^4/1^4	49	7-	7-	7B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1522); Forum Math. Sigma 3 (2015) e10, Table A.2
+14A	7A	14	1^4 14^4/2^4 7^4	1	14+14	14+14	14C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1523); Forum Math. Sigma 3 (2015) e10, Table A.2
+14B	7B	14	2^3 14^3/1^3 7^3	8	14+7	14+7	14B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1525); Forum Math. Sigma 3 (2015) e10, Table A.2
+8B	8A	8	8^4/2^4	16	8\vert 2-	8|2-	8D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1527); Forum Math. Sigma 3 (2015) e10, Table A.2
+8E	8C	8	2^2 8^4/1^4 4^2	32	8-	8-	8E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1529); Forum Math. Sigma 3 (2015) e10, Table A.2
+9A	9A	9	9^3/1^3	27	9-	9-	9B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1531); Forum Math. Sigma 3 (2015) e10, Table A.2
+18A	9A	18	1^3 18^3/2^3 9^3	1	18+18	18+18	18E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1532); Forum Math. Sigma 3 (2015) e10, Table A.2
+18B	9B	18	3^1 18^3/6^1 9^3	$-2$	18-	18-	18D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1534); Forum Math. Sigma 3 (2015) e10, Table A.2
+18C	9C	18	2^3 3^2 18^3/1^3 6^2 9^3	4	18+9	18+9	18C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1536); Forum Math. Sigma 3 (2015) e10, Table A.2
+10D	10A	10	5^2 10^2/1^2 2^2	25	10+2	10+2	10C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1538); Forum Math. Sigma 3 (2015) e10, Table A.2
+10E	10A	10	1^2 10^4/2^4 5^2	5	10-	10-	10E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1539); Forum Math. Sigma 3 (2015) e10, Table A.2
+20A	10B	20	2^3 20^3/4^3 10^3	$-1$	20\vert 2+10	20|2+10	20E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1541); Forum Math. Sigma 3 (2015) e10, Table A.2
+20B	10C	20	4^2 20^2/2^2 10^2	4	20\vert 2+5	20|2+5	20D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1543); Forum Math. Sigma 3 (2015) e10, Table A.2
+10I	10E	10	2^1 10^3/1^3 5^1	20	10-	10-	10E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1545); Forum Math. Sigma 3 (2015) e10, Table A.2
+22A	11A	22	2^2 22^2/1^2 11^2	4	22+11	22+11	22B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1547); Forum Math. Sigma 3 (2015) e10, Table A.2
+12C	12A	12	2^4 3^4 12^4/1^4 4^4 6^4	9	12+4	12+4	12B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1549); Forum Math. Sigma 3 (2015) e10, Table A.2
+12D	12A	12	1^4 12^4/3^4 4^4	1	12+12	12+12	12H	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1550); Forum Math. Sigma 3 (2015) e10, Table A.2
+12E	12B	12	2^2 12^4/4^4 6^2	$-3$	12-	12-	12I	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1552); Forum Math. Sigma 3 (2015) e10, Table A.2
+12F	12C	12	6^2 12^2/2^2 4^2	9	12\vert 2+2	12|2+2	12G	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1554); Forum Math. Sigma 3 (2015) e10, Table A.2
+12H	12D	12	1^1 12^3/3^3 4^1	4	12-	12-	12I	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1556); Forum Math. Sigma 3 (2015) e10, Table A.2
+12J	12E	12	4^2 12^2/1^2 3^2	16	12+3	12+3	12E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1558); Forum Math. Sigma 3 (2015) e10, Table A.2
+24A	12F	24	4^3 24^3/8^3 12^3	$-1$	24\vert 4+6	24|4+6	24F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1560); Forum Math. Sigma 3 (2015) e10, Table A.2
+12R	12K	12	2^2 3^1 12^3/1^3 4^1 6^2	12	12-	12-	12I	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1562); Forum Math. Sigma 3 (2015) e10, Table A.2
+24B	12L	24	24^2/12^2	2	24\vert 12-	24|12-	24J	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1564); Forum Math. Sigma 3 (2015) e10, Table A.2
+13A	13A	13	13^2/1^2	13	13-	13-	13B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1566); Forum Math. Sigma 3 (2015) e10, Table A.2
+26A	13A	26	1^2 26^2/2^2 13^2	1	26+26	26+26	26B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1567); Forum Math. Sigma 3 (2015) e10, Table A.2
+28A	14A	28	2^2 28^2/4^2 14^2	1	28\vert 2+14	28|2+14	28D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1569); Forum Math. Sigma 3 (2015) e10, Table A.2
+15A	15A	15	1^3 15^3/3^3 5^3	$-1$	15+15	15+15	15C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1571); Forum Math. Sigma 3 (2015) e10, Table A.2
+30A	15A	30	2^3 3^3 5^3 30^3/1^3 6^3 10^3 15^3	1	30+6,10,15	30+6,10,15	30A	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1572); Forum Math. Sigma 3 (2015) e10, Table A.2
+15B	15B	15	3^2 15^2/1^2 5^2	9	15+5	15+5	15B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1574); Forum Math. Sigma 3 (2015) e10, Table A.2
+30B	15B	30	1^2 5^2 6^2 30^2/2^2 3^2 10^2 15^2	1	30+5,6,30	30+5,6,30	30D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1575); Forum Math. Sigma 3 (2015) e10, Table A.2
+15C	15C	15	15^2/3^2	5	15\vert 3-	15|3-	15D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1577); Forum Math. Sigma 3 (2015) e10, Table A.2
+30C	15C	30	3^2 30^2/6^2 15^2	1	30\vert 3+10	30|3+10	30E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1578); Forum Math. Sigma 3 (2015) e10, Table A.2
+30D	15D	30	2^1 6^1 10^1 30^1/1^1 3^1 5^1 15^1	4	30+3,5,15	30+3,5,15	30C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1580); Forum Math. Sigma 3 (2015) e10, Table A.2
+30E	15E	30	2^2 3^1 5^1 30^2/1^2 6^1 10^1 15^2	2	30+15	30+15	30G	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1582); Forum Math. Sigma 3 (2015) e10, Table A.2
+16C	16B	16	2^1 16^2/1^2 8^1	8	16-	16-	16B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1584); Forum Math. Sigma 3 (2015) e10, Table A.2
+18D	18A	18	9^1 18^1/1^1 2^1	9	18+2	18+2	18A	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1586); Forum Math. Sigma 3 (2015) e10, Table A.2
+18E	18A	18	1^1 18^2/2^2 9^1	3	18-	18-	18D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1587); Forum Math. Sigma 3 (2015) e10, Table A.2
+18G	18B	18	2^1 3^1 18^2/1^2 6^1 9^1	6	18-	18-	18D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1589); Forum Math. Sigma 3 (2015) e10, Table A.2
+20C	20A	20	2^2 5^2 20^2/1^2 4^2 10^2	5	20+4	20+4	20C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1591); Forum Math. Sigma 3 (2015) e10, Table A.2
+20D	20A	20	1^2 20^2/4^2 5^2	1	20+20	20+20	20F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1592); Forum Math. Sigma 3 (2015) e10, Table A.2
+21A	21A	21	1^2 21^2/3^2 7^2	1	21+21	21+21	21D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1594); Forum Math. Sigma 3 (2015) e10, Table A.2
+42A	21A	42	2^2 3^2 7^2 42^2/1^2 6^2 14^2 21^2	1	42+6,14,21	42+6,14,21	42B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1595); Forum Math. Sigma 3 (2015) e10, Table A.2
+21B	21B	21	7^1 21^1/1^1 3^1	7	21+3	21+3	21B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1597); Forum Math. Sigma 3 (2015) e10, Table A.2
+42B	21B	42	1^1 3^1 14^1 42^1/2^1 6^1 7^1 21^1	1	42+3,14,42	42+3,14,42	42D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1598); Forum Math. Sigma 3 (2015) e10, Table A.2
+42C	21C	42	6^1 42^1/3^1 21^1	2	42\vert 3+7	42|3+7	42C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1600); Forum Math. Sigma 3 (2015) e10, Table A.2
+46AB	23AB	46	2^1 46^1/1^1 23^1	2	46+23	46+23	46AB	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1602); Forum Math. Sigma 3 (2015) e10, Table A.2
+24C	24A	24	2^2 24^2/6^2 8^2	1	24\vert 2+12	24|2+12	24H	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1604); Forum Math. Sigma 3 (2015) e10, Table A.2
+24D	24B	24	2^1 3^2 4^1 24^2/1^2 6^1 8^2 12^1	3	24+8	24+8	24C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1606); Forum Math. Sigma 3 (2015) e10, Table A.2
+24E	24B	24	1^2 4^1 6^1 24^2/2^1 3^2 8^2 12^1	$-1$	24+24	24+24	24I	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1607); Forum Math. Sigma 3 (2015) e10, Table A.2
+24F	24C	24	8^1 24^1/2^1 6^1	4	24\vert 2+3	24|2+3	24D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1609); Forum Math. Sigma 3 (2015) e10, Table A.2
+24G	24D	24	12^1 24^1/4^1 8^1	3	24\vert 4+2	24|4+2	24G	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1611); Forum Math. Sigma 3 (2015) e10, Table A.2
+52A	26A	52	2^1 52^1/4^1 26^1	$-1$	52\vert 2+26	52|2+26	52B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1613); Forum Math. Sigma 3 (2015) e10, Table A.2
+28C	28A	28	4^1 28^1/1^1 7^1	4	28+7	28+7	28C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1615); Forum Math. Sigma 3 (2015) e10, Table A.2
+56AB	28B	56	4^1 56^1/8^1 28^1	1	56\vert 4+14	56|4+14	56BC	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1617); Forum Math. Sigma 3 (2015) e10, Table A.2
+30F	30A	30	1^1 2^1 15^1 30^1/3^1 5^1 6^1 10^1	1	30+2,15,30	30+2,15,30	30F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1619); Forum Math. Sigma 3 (2015) e10, Table A.2
+30G	30A	30	2^2 3^1 5^1 30^2/1^1 6^2 10^2 15^1	$-1$	30+15	30+15	30G	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1620); Forum Math. Sigma 3 (2015) e10, Table A.2
+60A	30B	60	2^1 10^1 12^1 60^1/4^1 6^1 20^1 30^1	1	60\vert 2+5,6,30	60|2+5,6,30	60E	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1622); Forum Math. Sigma 3 (2015) e10, Table A.2
+60B	30C	60	6^1 60^1/12^1 30^1	$-1$	60\vert 6+10	60|6+10	60F	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1624); Forum Math. Sigma 3 (2015) e10, Table A.2
+30K	30E	30	2^1 30^1/3^1 5^1	2	30+15	30+15	30G	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1626); Forum Math. Sigma 3 (2015) e10, Table A.2
+33A	33A	33	3^1 33^1/1^1 11^1	3	33+11	33+11	33A	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1628); Forum Math. Sigma 3 (2015) e10, Table A.2
+66A	33A	66	1^1 6^1 11^1 66^1/2^1 3^1 22^1 33^1	1	66+6,11,66	66+6,11,66	66B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1629); Forum Math. Sigma 3 (2015) e10, Table A.2
+35A	35A	35	1^1 35^1/5^1 7^1	$-1$	35+35	35+35	35B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1631); Forum Math. Sigma 3 (2015) e10, Table A.2
+70A	35A	70	2^1 5^1 7^1 70^1/1^1 10^1 14^1 35^1	1	70+10,14,35	70+10,14,35	70B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1632); Forum Math. Sigma 3 (2015) e10, Table A.2
+36A	36A	36	2^1 9^1 36^1/1^1 4^1 18^1	3	36+4	36+4	36B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1634); Forum Math. Sigma 3 (2015) e10, Table A.2
+36B	36A	36	1^1 36^1/4^1 9^1	1	36+36	36+36	36D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1635); Forum Math. Sigma 3 (2015) e10, Table A.2
+39AB	39AB	39	1^1 39^1/3^1 13^1	1	39+39	39+39	39CD	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1637); Forum Math. Sigma 3 (2015) e10, Table A.2
+78AB	39AB	78	2^1 3^1 13^1 78^1/1^1 6^1 26^1 39^1	1	78+6,26,39	78+6,26,39	78BC	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1638); Forum Math. Sigma 3 (2015) e10, Table A.2
+40AB	40A	40	2^1 40^1/8^1 10^1	1	40\vert 2+20	40|2+20	40CD	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1640); Forum Math. Sigma 3 (2015) e10, Table A.2
+84A	42A	84	4^1 6^1 14^1 84^1/2^1 12^1 28^1 42^1	1	84\vert 2+6,14,21	84|2+6,14,21	84B	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1642); Forum Math. Sigma 3 (2015) e10, Table A.2
+60C	60A	60	1^1 4^1 6^1 10^1 15^1 60^1/2^1 3^1 5^1 12^1 20^1 30^1	$-1$	60+4,15,60	60+4,15,60	60C	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1644); Forum Math. Sigma 3 (2015) e10, Table A.2
+60D	60A	60	3^1 4^1 5^1 60^1/1^1 12^1 15^1 20^1	1	60+12,15,20	60+12,15,20	60D	Duncan & Mack-Crane, arXiv:1409.3829v2, Table 2 "Data for the T^s_{g,tw}" (vacogm_s1.tex line 1645); Forum Math. Sigma 3 (2015) e10, Table A.2

@@ -1,0 +1,291 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\cl}{\mathcal{C}}
+\newcommand{\cat}{\mathcal{K}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\CN}{\mathrm{CN}}
+\newcommand{\lean}[1]{\textnormal{\texttt{#1}}}
+\newcommand{\leanref}[1]{\par\noindent{\small\textit{Lean:} #1}\par\medskip}
+\newcommand{\Gz}{\Gamma_0}
+
+\title[The Conway--Norton table is forced]{The Conway--Norton Table Is Forced:\\ Monstrous Moonshine Assignment\\ Rigidity, Formally Verified}
+\author{Andrej Alfirevic}
+\urladdr{https://xladn0.com}
+\thanks{ORCID: \href{https://orcid.org/0009-0009-8224-1345}{0009-0009-8224-1345}}
+\date{26 November 2026}
+
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{abstract}
+Monstrous moonshine connects the largest sporadic simple group, the Monster, with modular functions. In 1979 Conway and Norton assigned to each of the Monster's $194$ conjugacy classes a group of symmetries of the upper half-plane, and Borcherds later proved that this assignment is correct. We ask a different question: does the Monster's own finite data force this table, or could another table fit equally well? We prove that, for the published character-table data of the Monster, the Conway--Norton table is the only assignment of candidate groups of the right shape ($385$ candidates) that obeys Conway and Norton's rule for powers of elements, two simple conditions on the first coefficients of the moonshine functions, and the requirement of genus zero. Dropping any one of these conditions allows other tables. The same conditions do not single out a table for two related cases, the Baby Monster and Conway's group. All results are proved in the Lean~4 proof assistant, with every computation checked by its kernel; the facts that are used but not formalized are listed explicitly.
+\end{abstract}
+
+\maketitle
+
+%======================================================================
+\section{Introduction}
+%======================================================================
+
+\subsection{Moonshine in brief}
+The Monster $\M$ is the largest of the $26$ sporadic finite simple groups; it has about $8\times10^{53}$ elements. Its elements fall into $194$ \emph{conjugacy classes}: two elements are in the same class if one becomes the other after a change of coordinates inside the group. Many properties of an element depend only on its class, for example its order and the class of each of its powers.
+
+Monstrous moonshine~\cite{CN79,Bo92} attaches to each class $g$ a function $T_g(\tau)=q^{-1}+0+a_1(g)q+a_2(g)q^2+\cdots$, where $q=e^{2\pi i\tau}$, whose coefficients come from the representation theory of $\M$ (they are traces on the graded pieces of the moonshine module $V^\natural$). Conway and Norton conjectured, and Borcherds proved, that each $T_g$ is a \emph{Hauptmodul}: there is a group $\Gamma_g$ of symmetries of the upper half-plane such that $T_g$ is invariant under $\Gamma_g$ and generates all functions with this invariance. A group has a Hauptmodul only if the surface it produces, its modular curve, is a sphere, that is, has \emph{genus zero}.
+
+Conway and Norton listed the group $\Gamma_g$ for every class in their Table~2. We call this list the \emph{CN table}. They found it by computing the first coefficients of each $T_g$ and matching them against known groups.
+
+\subsection{The question and the answer}
+Could the CN table be derived from the Monster itself, with no list of groups to match against? Our main result (MAR-9) says yes, given the general form that moonshine takes. Each group in the CN table is described by a short \emph{label} $n|h+W$ (explained in Section~\ref{sec:setting}), and labels of powers of an element follow a simple \emph{power rule} found by Conway and Norton. Allow every class any label of this form whose modular curve has genus zero; there are $385$ such candidate labels for the element orders of $\M$. Require three things: the power rule, a vanishing condition on the coefficients $a_1,a_2$ that the label implies, and that classes with the same label have the same $a_1$. Then exactly one assignment remains, and it is the CN table. Each requirement is needed: without any one of them, other tables satisfy the rest (MAR-10).
+
+The answer is special to the Monster. For the Baby Monster, the data have symmetries that swap classes with different moonshine functions, so no rule based on powers of elements can recover them (MAR-11, MAR-12). For Conway's group, the same requirements allow exactly $12$ tables on the classes of odd order (MAR-15), and the group of $g^2$ is not determined by the group of $g$ (MAR-16).
+
+\subsection{How the results are checked}
+Every result is a theorem in the Lean~4 proof assistant~\cite{repo}. The computations, some of which run through many thousands of cases, are carried out and checked by Lean's kernel, so a reader does not have to trust our code. Each result has its own file in the directory \texttt{MAR/} of the repository. This paper does not give a new proof of Borcherds' theorem, and it does not prove in Lean that each $T_g$ is the Hauptmodul of its CN group.
+
+%======================================================================
+\section{The setting}\label{sec:setting}
+%======================================================================
+
+\subsection{Labels and the power rule}
+Conway and Norton describe each group $\Gamma_g$ by a label $n|h+W$. Roughly: $n$ is the \emph{level} and equals the order of $g$; $h$ is a small divisor of $24$ (with $h\mid n$) that records a twist; and $W$ is a set of numbers $e$ dividing $n/h$, each standing for an extra symmetry of the curve, an Atkin--Lehner involution. We write $n-$ when $W$ contains only $1$, and $n+$ when $W$ contains all allowed $e$. Formally a label is a triple $(n,h,W)$ with $W$ a group of Hall divisors of $n/h$ (divisors $e$ with $\gcd(e,n/(he))=1$) under $e*f=ef/\gcd(e,f)^2$.
+
+The \emph{power rule}~\cite[\S6]{CN79} gives the label of $g^p$, for a prime $p$, from the label of $g$:
+\[
+(n|h+W)^p=n'|h'+\{e\in W: e\mid n'/h'\},\qquad n'=\tfrac{n}{\gcd(n,p)},\quad h'=\tfrac{h}{\gcd(h,p)}.
+\]
+For example, $(6+3)^2=3+$ and $(6+3)^3=2-$. The CN table obeys this rule for every class and every prime dividing $|\M|$; this is checked in Lean.
+
+\subsection{The three conditions}
+Let $\cl$ be the set of the $194$ classes and $L$ an assignment of a label $L(g)$ to each class $g$. We consider:
+\begin{itemize}
+\item[(C)] \emph{Compatibility:} the level of $L(g)$ is the order of $g$, and $L(g^p)=L(g)^p$ for every class $g$ and each of the $15$ primes $p$ dividing $|\M|$.
+\item[(V)] \emph{Vanishing:} if $h(L(g))>1$, the function $T_g$ changes by a root of unity when $\tau$ is shifted by $1/h$, and this forces some coefficients to vanish. We use this for the first two: for $m\in\{1,2\}$, $a_m(g)=0$ unless $h$ divides $m+1$.
+\item[(H)] \emph{Coherence:} if two classes get the same label, they get the same coefficient $a_1$. This holds for the true table because a genus-zero group has only one normalized Hauptmodul.
+\end{itemize}
+The coefficients are given by characters of $\M$: $a_1=1+\chi_2$ and $a_2=1+\chi_2+\chi_3$, where $\chi_2$ and $\chi_3$ are the irreducible characters of degrees $196883$ and $21296876$.
+
+\subsection{What exactly is proved}\label{sec:scope}
+A proof assistant can only reason about objects defined inside it. Our theorems are statements about the following explicit objects, and for them they are proved completely:
+\begin{itemize}
+\item the classes, element orders, centralizer orders, power maps and characters of the table \texttt{"M"} in the GAP Character Table Library, version 1.3.11~\cite{CTblLib}, and the analogous tables of the Baby Monster's double cover $2\cdot\BB$ and of Conway's group $\mathrm{Co}_0=2\cdot\mathrm{Co}_1$;
+\item the CN table as transcribed from~\cite[App.~A]{DGO}, and the Conway-moonshine labels as transcribed from~\cite[Table~A.1]{DMC15};
+\item a function \lean{genusZero} that decides genus zero by the classical Riemann--Hurwitz formula, with the classical count of fixed points of Atkin--Lehner involutions (Fricke; Ogg~\cite{Ogg74}; Furumoto--Hasegawa~\cite{FH99}).
+\end{itemize}
+The kernel checks that these data are internally consistent, for example that the class sizes add up to the group order and that the characters satisfy the orthogonality relations.
+
+To read the theorems as statements about the Monster itself, one needs five standard facts that are not formalized:
+\begin{enumerate}
+\item[(A1)] the library tables are the character tables of $\M$, $2\cdot\BB$ and $\mathrm{Co}_0$;
+\item[(A2)] the transcribed labels are those published by Conway--Norton and by Duncan--Mack-Crane;
+\item[(A3)] the coefficients are given by the characters as stated above (for $\M$: $V^\natural_2=1+\chi_2$ and $V^\natural_3=1+\chi_2+\chi_3$; for $2\cdot\BB$ and $\mathrm{Co}_0$ see Sections~\ref{sec:baby} and~\ref{sec:conway});
+\item[(A4)] \lean{genusZero} decides correctly whether a curve $X_0(N)/W$ has genus zero;
+\item[(A5)] a genus-zero group has a unique normalized Hauptmodul, and a quotient of a genus-zero curve has genus zero.
+\end{enumerate}
+Formalizing these would require, inside Lean, the character table of a constructed Monster, the decomposition of $V^\natural$ into irreducible representations, and the genus of modular curves. The moonshine module itself has recently been built in Lean~\cite{PopovVOA}, but the other ingredients are not yet available in any proof assistant.
+
+%======================================================================
+\section{The main theorem}\label{sec:main}
+%======================================================================
+Let $\U$ be the set of all labels $n|h+W$ such that $n$ is the order of some element of $\M$ (there are $73$ such orders), $h\in\{1,2,3,4,6,8,12,24\}$ divides $n$, $W$ is a group of Hall divisors of $n/h$, and \lean{genusZero} holds for $X_0(n/h)/W$.
+
+\begin{theorem}[MAR-9]\label{thm:mar9}
+The set $\U$ has $385$ elements. An assignment $L$ of labels in $\U$ to the $194$ classes satisfies (C), (V) and (H) if and only if $L$ is the CN table.
+\end{theorem}
+\leanref{\lean{MAR.MAR9}, \lean{MAR.MAR9\_converse}}
+
+\begin{proof}[How the proof works]
+The proof has four steps.
+\begin{enumerate}
+\item \emph{No candidate is missed.} The definition of $\U$ quantifies over all labels. A general lemma shows that every label satisfying it appears in an explicit list built from all subsets of Hall divisors, and the kernel checks that this list has $385$ entries (\lean{MAR9\_exhaustive}, \lean{MAR9\_universe}).
+\item \emph{Each group has one label.} Two labels in $\U$ with the same $n$, $h$ and set $W$ are equal (\lean{MAR9\_normal\_form}).
+\item \emph{Elimination is sound.} Start with, for each class, the list of candidates that pass (V). A candidate can be removed from a class if it is incompatible with every candidate of a related class, along $g\mapsto g^p$ in either direction, or if it conflicts with (H). We prove once and for all that such removals never discard an assignment satisfying the conditions.
+\item \emph{The computation.} After four rounds of removals, each class has exactly one candidate left, namely its CN label. Each round is checked by the kernel separately.
+\end{enumerate}
+Conversely, the kernel checks directly that the CN table satisfies (C), (V) and (H).
+\end{proof}
+
+\begin{theorem}[MAR-10]\label{thm:mar10}
+None of the conditions can be dropped. In each case below, the given table satisfies all the other conditions and differs from the CN table only at the listed classes.
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Dropped condition & Alternative table\\
+\midrule
+(H) & $18E\mapsto18-$\\
+vanishing of $a_1$ & $27B\mapsto27|3$\\
+vanishing of $a_2$ & $16B\mapsto16+$, $16C\mapsto16-$, $32A\mapsto32|2+$, $32B\mapsto32+$\\
+the power rule & $9B\mapsto9|3$\\
+genus zero & $24I\mapsto24-$, $32A\mapsto32-$ (genus one)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Moreover (MAR-10$'$), if the part of the power rule concerning $W$ is weakened to an inclusion, another table satisfies all conditions; it differs from the CN table at $15$ classes.
+\end{theorem}
+\leanref{\lean{MAR.MAR10}, \lean{MAR.MAR10\_power}, \lean{MAR.MAR10\_genus\_admissible}, \lean{MAR.MAR10b}}
+The requirement that the level of $L(g)$ is the order of $g$ is part of what a label of $g$ means, and we do not consider dropping it.
+
+\emph{What this means for the Monster.} By (A1)--(A5), among all ways of attaching groups of Conway--Norton shape with genus zero to the classes of $\M$, the CN table is the only one that obeys the power rule, the vanishing of $a_1,a_2$, and coherence of $a_1$. For $h>1$ the genus condition we impose is necessary for the actual CN group to have genus zero, so $\U$ may contain more candidates than needed; this only makes uniqueness stronger.
+
+%======================================================================
+\section{Is the theorem circular?}\label{sec:circ}
+%======================================================================
+The label shape and the power rule were formulated by Conway and Norton while they studied their table. A sceptic may therefore ask whether MAR-9 only shows that the table is the unique solution of rules that were read off from the table. We answer in four points.
+
+\emph{The conditions are uniform rules, not table entries.} The proof never uses an entry of the CN table. The candidate set $\U$ is defined by the shape of labels and genus zero, and (C), (V), (H) are the same few rules at every class. The conclusion picks $194$ labels out of $385$ candidates. So the theorem says that a short, uniform law, together with the group's data, has exactly one solution.
+
+\emph{Two of the conditions come from moonshine itself.} Coherence (H) holds for any assignment of genus-zero groups whose Hauptmoduln are the $T_g$, because such a group has only one normalized Hauptmodul. Vanishing (V) holds for any group of the form $n|h+W$, because of the twist recorded by $h$~\cite{CN79}. Neither uses the table.
+
+\emph{The other two are assumptions, and we say so.} The CN table satisfies the label shape and the power rule (checked in Lean), but we do not derive them from the structure of $V^\natural$. Doing so is the first open question in Section~\ref{sec:end}.
+
+\emph{The same rules do not single out a table elsewhere.} If the rules had been tailored to produce one answer, one might expect them to do so in other cases too. They do not. For Conway's group the same conditions allow exactly $12$ tables on the classes of odd order (MAR-15), and on all classes the power rule cannot hold as a rule on groups (MAR-16). For the Baby Monster, no rule based on powers of elements can recover the moonshine functions (MAR-11, MAR-12). Uniqueness is therefore a property of the Monster's data, not of the rules, and MAR-10 shows that none of the rules is superfluous.
+
+%======================================================================
+\section{When the list of groups is given}\label{sec:cat}
+%======================================================================
+Suppose we are given the $171$ distinct groups of the CN table, but not which class gets which group. Call an assignment of these groups to classes \emph{compatible} if it satisfies (C). Let $\sigma$ be the permutation of classes that swaps $16B$ with $16C$ and $32A$ with $32B$.
+
+\begin{theorem}[MAR-1 to MAR-8]
+The following hold.
+\begin{enumerate}
+\item (MAR-5) There are exactly $8$ compatible assignments. They arise from three independent choices: $\{16B\mapsto16+,\ 32A\mapsto32|2+\}$, $\{16C\mapsto16-,\ 32B\mapsto32+\}$, and $\{18E\mapsto18-\}$.
+\item (MAR-1) Only two of them use every group: the CN table, and the CN table with $\sigma$ applied.
+\item (MAR-2) The power maps, element orders and centralizer orders cannot tell these two apart: $\sigma$ preserves all of them. Only character values can, for example $a_2(32A)=4$ but $a_2(32B)=0$.
+\item (MAR-3) The CN table is the only compatible assignment that uses every group and satisfies the vanishing of $a_2$, and also the only one that satisfies the vanishing of $a_2$ and (H).
+\item (MAR-4) Neither coefficient condition in MAR-3 can be dropped.
+\item (MAR-6) Every permutation of the classes that preserves element orders and commutes with all power maps only swaps classes within $24$ fixed pairs. On $22$ of these pairs, the two classes also agree in $\chi_2,\chi_3,\chi_4$, in centralizer order and in CN label; the other two pairs are those of $\sigma$.
+\item (MAR-7) No rule that gives the same answer on classes swapped by $\sigma$ can produce the twist $h$ of the CN table at both $32A$ (where $h=1$) and $32B$ (where $h=2$). In particular no rule based only on power maps, element orders and centralizer orders can.
+\item (MAR-8) Every compatible assignment has the same twist $h$ as the CN table at every class except $32A$ and $32B$.
+\end{enumerate}
+\end{theorem}
+\leanref{\lean{MAR.MAR1} to \lean{MAR.MAR8}}
+Le~Bruyn~\cite{LeBruyn} gave a rule that computes $h$ from power maps. On the data it fails at exactly $14$ classes (\lean{LeBruyn\_check}); by MAR-7, a failure at $32A$ or $32B$ is unavoidable for any such rule.
+
+%======================================================================
+\section{The Baby Monster}\label{sec:baby}
+%======================================================================
+Generalized moonshine~\cite{Norton87} attaches functions to pairs of commuting elements. Fixing an element $t$ of class $2A$ in $\M$, the elements commuting with $t$ form the double cover $2\cdot\BB$ of the Baby Monster, with $247$ classes, and H\"ohn proved that the resulting functions $T_{t,g}=q^{-1}+0+H_1(g)q+H_2(g)q^2+\cdots$ are Hauptmoduln~\cite{Hoehn03}. Here $H_1=1+\chi_{4371}$ and $H_2=\chi_{96256}$ are given by characters.
+
+\begin{theorem}[MAR-11, MAR-12]
+There are explicit permutations of the classes of $2\cdot\BB$ that preserve element orders and centralizer orders and commute with all power maps, but swap $8C\leftrightarrow8D$, $16A\leftrightarrow16B$, $24B\leftrightarrow24C$, $24D\leftrightarrow24E$, $40B\leftrightarrow40C$ and $48A\leftrightarrow48B$, where $H_1$ differs, and $12X\leftrightarrow12Y$ and $16H\leftrightarrow16I$, where $H_2$ differs. Consequently no rule that is unchanged by these permutations gives $H_1$ correctly.
+\end{theorem}
+\leanref{\lean{MAR.MAR11\_H1}, \lean{MAR.MAR11\_H2}, \lean{MAR.MAR12}}
+\emph{What this means.} By (A1), (A3) and H\"ohn's theorem, the swapped classes have different moonshine functions. So no rule that uses only power maps, element orders and centralizer orders can recover Baby Monster moonshine. A rule that may also use class names, characters or the map to $\BB$ is not covered by this argument.
+
+%======================================================================
+\section{Conway moonshine}\label{sec:conway}
+%======================================================================
+Duncan and Mack-Crane~\cite{DMC15} constructed an analogue of moonshine for Conway's group $\mathrm{Co}_0$ ($167$ classes), with functions $T^s_g=q^{-1}+0+a_1(g)q+a_2(g)q^2+\cdots$ that are Hauptmoduln. Each $T^s_g$ is an explicit eta quotient determined by the action of $g$ on the Leech lattice, and $a_1=\chi_{276}$, $a_2=-(\chi_{24}+\chi_{2024})$. The kernel checks that the lattice data agree with the character $\chi_{24}$, and that $\chi_{276}$ is the exterior square of $\chi_{24}$.
+
+\begin{theorem}[MAR-14]
+Permutations of the classes of $\mathrm{Co}_0$ that preserve orders, centralizer orders and power maps swap $9B\leftrightarrow9C$, $18B\leftrightarrow18C$, $12Q\leftrightarrow12R$, $16B\leftrightarrow16C$, $18F\leftrightarrow18H$ and $18G\leftrightarrow18I$, whose functions differ in $a_1$ or $a_2$.
+\end{theorem}
+\leanref{\lean{MAR.MAR14}}
+
+The $29$ classes of odd order behave like the Monster in one respect: all their published labels have the form $n|h+W$, now with $n=2\,o(g)$. So the conditions of MAR-9 make sense for them. We even strengthen (V) and (H): we require every coefficient up to $q^{39}$ that the label forces to vanish to be zero, and classes with the same label to have identical series.
+
+\begin{theorem}[MAR-15]
+Under these conditions there are exactly $12$ labellings of the $29$ odd-order classes. They agree with the published table except at $9A$, $9B$ and $9C$, where they use the labels $18-$, $18+9$, $18+18$ and $18|3$, and the published table is one of them. The series of all $29$ classes are checked to $q^{39}$ against their eta-quotient formulas.
+\end{theorem}
+\leanref{\lean{MAR.MAR15}, \lean{MAR.MAR15\_rows}}
+The proof is a complete search whose every step is proved sound; the kernel runs the search and finds exactly the $12$ labellings.
+
+\begin{theorem}[MAR-16]
+For each of the pairs $(6E,6J)$, $(6F,6I)$, $(10D,10I)$, $(10E,10H)$, $(18D,18G)$, $(18E,18F)$, $(30F,30K)$, $(30G,30J)$, the two classes have the same order, the same series to $q^{39}$ and the same label (after the correction of MAR-13 in Section~\ref{sec:errata}), but their squares have different $\chi_{276}$ and different labels. Hence there is no rule that gives the label of $g^2$ from the label of $g$. For odd primes such a rule exists, and for the Monster it exists for every prime.
+\end{theorem}
+\leanref{\lean{MAR.MAR16}, \lean{MAR.MAR16\_no\_rule}, \lean{MAR.MAR16\_odd}, \lean{MAR.MAR16\_monster}}
+
+%======================================================================
+\section{Errata to published tables}\label{sec:errata}
+%======================================================================
+The same checks can be applied to any published table. We found the following inconsistencies. They are errata, not results of this paper.
+
+\begin{proposition}[MAR-13]
+In Table~A.1 of~\cite{DMC15}, the classes $12E$, $6M$ and $6N$ all have the label $12-$, but $a_1(12E)=-2$ while $a_1(6M)=a_1(6N)=2$, which is also the value for the Monster's function of the group $12-$. Likewise $30J$ and $30K$ both have the label $60+12,15,20$, but $a_2(30J)=-1$ and $a_2(30K)=1$, the value for the Monster's function of that group.
+\end{proposition}
+\leanref{\lean{MAR.MAR13}}
+Since a genus-zero group has only one normalized Hauptmodul (A5), the labels of $12E$ and $30J$ are wrong. The correct groups, $(24|2+12)^{\uparrow1/4}$ and $(60+12,15,20)^{\uparrow1/2}$, already appear in Kondo's 1985 table~\cite[Table~II]{Kondo85}. The finite computations of a certificate for them are checked in Lean; the certificate also uses four classical theorems on eta quotients (Newman's criterion, Ligozat's formula, the valence formula, Euler's identity for $q\mapsto-q$), which are not formalized.
+
+\begin{proposition}[MAR-17]
+In Table~3 of~\cite{CM18}, the square of the class $46c$ of $2\cdot\BB$ is printed as $23c$, a class that does not exist (it is $23a$), and the square of $94b$ is printed as $47a$ (it is $47b$). In~\cite[App.~A]{DGO} the Monster is said to have $196$ conjugacy classes; it has $194$.
+\end{proposition}
+\leanref{\lean{MAR.MAR17\_46c}, \lean{MAR.MAR17\_94b}, \lean{MAR.MAR17\_194}}
+These misprints are present in the latest versions we could read (the published version of~\cite{CM18} and arXiv:1411.6571v2 of~\cite{DGO}). We found no erratum, but our search was not exhaustive.
+
+%======================================================================
+\section{The formalization}\label{sec:lean}
+%======================================================================
+The development uses Lean~4 (version 4.37.0-rc1) and its mathematics library Mathlib. It contains no unproved steps (\texttt{sorry}), does not use Lean's compiler to evaluate proofs (\texttt{native\_decide}), and adds no axioms; for every result, Lean reports that it depends only on the three standard axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}. Finite computations are evaluated by the kernel (\texttt{decide +kernel}). Long computations are split into steps, each proved equal to an explicit intermediate result; these intermediate results are produced by running the code, but they are not trusted, because each is checked by the kernel.
+
+The directory \texttt{MAR/} contains one file per result, which explains the result in words and restates its theorems under the names \lean{MAR.MAR1} to \lean{MAR.MAR17}. The repository~\cite{repo} also contains the source data, the scripts that produced the Lean data files, and a script that builds everything and checks the axioms.
+
+%======================================================================
+\section{Related work}\label{sec:lit}
+%======================================================================
+Conway and Norton~\cite{CN79} found the table by matching coefficients with genus-zero groups; the power rule is their \S6. Borcherds~\cite{Bo92} proved the Hauptmodul property, comparing class by class with the help of the character table. Conway, McKay and Sebbar~\cite{CMS04} characterized the \emph{set} of moonshine groups, but not which class gets which group. Ferenbaugh~\cite{Fer} classified the groups of type $n|h$ (we know this work through~\cite{CMT}), and Chen, Marks and Tyler~\cite{CMT} studied compatibility with powers for other groups. Le~Bruyn~\cite{LeBruyn} recovers the twist $h$ from power maps, with exceptions. For the Baby Monster, H\"ohn~\cite{Hoehn03} and Cummins and Matias~\cite{CM18} describe the functions and note that a power rule on groups fails at $p=2$. Duncan and Mack-Crane~\cite{DMC15} constructed Conway moonshine, whose groups Kondo~\cite{Kondo85} had computed earlier.
+
+On the formal side, Popov and Rastelli~\cite{PopovVOA} built the moonshine module in Lean and proved that each $T_g$ is the Hauptmodul of \emph{some} genus-zero group; identifying it with the group in the CN table is, in their words, in preparation. MAR-9 reduces that identification to the conditions (C), (V), (H) and genus zero. Guu~\cite{Guu26} discusses how far such formal statements can be trusted.
+
+\emph{Limitation of our review.} We used only openly accessible sources. We did not consult~\cite{Norton84,FMN,Norton09,Cummins04,Fer,Gannon}, which are not openly accessible, so we cannot exclude that some of our results appear there. In the accessible literature we found no prior statement of MAR-1 to MAR-16.
+
+%======================================================================
+\section{Conclusion and open questions}\label{sec:end}
+%======================================================================
+For the published data of the Monster, the power rule, two characters and genus zero force the moonshine table (MAR-9), and none of these ingredients can be dropped (MAR-10). The same rules do not force a table for the Baby Monster or for Conway's group (MAR-11 to MAR-16). The results are finite statements about known tables, and their depth is modest; what they add is the question, a sharp answer for the Monster, and complete machine-checked proofs.
+\begin{enumerate}
+\item Can the label shape and the power rule be derived from the structure of the moonshine module $V^\natural$? Together with~\cite{PopovVOA}, this would give a formal proof that each $T_g$ is the Hauptmodul of its CN group.
+\item Is there a positive result of this kind for the Baby Monster?
+\item Why does the Monster's power-map data have the extra symmetry $\sigma$?
+\end{enumerate}
+
+\section*{Statement on novelty}
+MAR-1 to MAR-16 are new as far as we can tell from the literature review above, in the sense that we found no earlier statement of them. MAR-13 and MAR-17 are corrections of published tables, not discoveries; for MAR-13 the correct groups were given by Kondo in 1985. Sources we could not access are an acknowledged limitation, and we welcome pointers.
+
+\section*{Acknowledgments}
+This work relies on the Lean proof assistant and its mathematics library Mathlib, and on the GAP Character Table Library of Thomas Breuer; the author thanks their developers and maintainers. The author also thanks the authors of the published moonshine tables used here, whose careful work made these checks possible.
+
+\section*{Declaration of generative AI and AI-assisted technologies}
+During the preparation of this work the author used Claude (Anthropic), to write most of the Lean proofs and the verification code, as support in the bibliographic search, and to refine the text of this paper, under the author's direction. The correctness of the theorems does not depend on the AI: every proof is checked by the Lean kernel, and all code, data and proofs are publicly available so that every claim can be checked independently. The author reviewed the results and the text and takes full responsibility for the content of this publication.
+
+\begin{thebibliography}{99}
+\bibitem{Bo92} R.~E. Borcherds, Monstrous moonshine and monstrous Lie superalgebras, \emph{Invent. Math.} 109 (1992), 405--444.
+\bibitem{CTblLib} T.~Breuer, The GAP Character Table Library, version 1.3.11.
+\bibitem{CMT} R.~C. Chen, S.~Marks, M.~Tyler, $p$-adic properties of Hauptmoduln with applications to moonshine, \emph{SIGMA} 15 (2019), 033, arXiv:1809.02913.
+\bibitem{CMS04} J.~H. Conway, J.~McKay, A.~Sebbar, On the discrete groups of moonshine, \emph{Proc. Amer. Math. Soc.} 132 (2004), 2233--2240.
+\bibitem{CN79} J.~H. Conway, S.~P. Norton, Monstrous moonshine, \emph{Bull. London Math. Soc.} 11 (1979), 308--339.
+\bibitem{Cummins04} C.~J. Cummins, Congruence subgroups of groups commensurable with $\mathrm{PSL}(2,\mathbb{Z})$ of genus 0 and 1, \emph{Experiment. Math.} 13 (2004), 361--382.
+\bibitem{CM18} C.~J. Cummins, R.~Matias, $(2+)$-replication and the Baby Monster, \emph{SIGMA} 14 (2018), 060, arXiv:1710.01071.
+\bibitem{DMC15} J.~F.~R. Duncan, S.~Mack-Crane, The moonshine module for Conway's group, \emph{Forum Math. Sigma} 3 (2015), e10, arXiv:1409.3829.
+\bibitem{DGO} J.~F.~R. Duncan, M.~J. Griffin, K.~Ono, Moonshine, \emph{Res. Math. Sci.} 2 (2015), 11, arXiv:1411.6571.
+\bibitem{Fer} C.~R. Ferenbaugh, On the modular functions involved in ``Monstrous Moonshine'', PhD thesis, Princeton, 1992.
+\bibitem{FMN} D.~Ford, J.~McKay, S.~P. Norton, More on replicable functions, \emph{Comm. Algebra} 22 (1994), 5175--5193.
+\bibitem{FH99} M.~Furumoto, Y.~Hasegawa, Hyperelliptic quotients of modular curves $X_0(N)$, \emph{Tokyo J. Math.} 22 (1999), 105--125.
+\bibitem{Gannon} T.~Gannon, \emph{Moonshine beyond the Monster}, Cambridge University Press, 2006.
+\bibitem{Guu26} J.-C. Guu, Moonshine conjecture formalized, arXiv:2611.27001 (2026).
+\bibitem{Hoehn03} G.~H\"ohn, Generalized moonshine for the Baby Monster, preprint, 2003.
+\bibitem{Kondo85} T.~Kondo, The automorphism group of Leech lattice and elliptic modular functions, \emph{J. Math. Soc. Japan} 37 (1985), 337--362.
+\bibitem{LeBruyn} L.~Le~Bruyn, The monstrous moonshine picture, arXiv:1804.04127.
+\bibitem{Norton84} S.~P. Norton, More on moonshine, in \emph{Computational Group Theory}, Academic Press, 1984.
+\bibitem{Norton87} S.~P. Norton, Generalized moonshine, \emph{Proc. Sympos. Pure Math.} 47 (1987).
+\bibitem{Norton09} S.~P. Norton, Moonshine-type functions and the CRM correspondence, \emph{CRM Proc. Lecture Notes} 47 (2009), 327--342.
+\bibitem{Ogg74} A.~P. Ogg, Hyperelliptic modular curves, \emph{Bull. Soc. Math. France} 102 (1974), 449--462.
+\bibitem{PopovVOA} F.~K. Popov, L.~Rastelli, Vertex operator algebras in Lean: a formal library and its companion book, arXiv:2611.06616 (2026).
+\bibitem{repo} A.~Alfirevic, Monster Assignment Rigidity: Lean~4 formalization, \url{https://github.com/2alf/mar}, \href{https://doi.org/10.5281/zenodo.24569482}{doi:10.5281/zenodo.24569482}.
+\end{thebibliography}
+
+\end{document}
